@@ -1,0 +1,11 @@
+administrator.controller('Opsti', function($scope, $http, $compile){
+	
+	$scope.tab = 0;
+	
+	this.tabClick = function(num){
+		
+		$scope.tab = num;
+		
+	};
+	
+});

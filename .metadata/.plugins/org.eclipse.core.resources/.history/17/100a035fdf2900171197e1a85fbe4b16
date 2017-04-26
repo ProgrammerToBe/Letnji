@@ -1,0 +1,26 @@
+administrator.controller('Opsti', function($scope, $http, $compile){
+	
+	$scope.tab = 0;
+	
+	$scope.init = function(){
+		
+		
+		
+	};
+	
+
+	this.tabClick = function(num){
+		
+		$scope.tab = num;
+		
+	};
+	
+	this.tabClick2 = function(num){
+		
+		$scope.tab = num;
+		$timeout(function() {
+		    angular.element('#myselector').triggerHandler('click');
+		  });
+	};
+	
+});
