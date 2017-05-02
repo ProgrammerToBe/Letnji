@@ -26,6 +26,8 @@
 <script type = "text/javascript" src="AdminScript1.js"></script>
 <script type = "text/javascript" src="NMScript.js"></script>
 
+<script type="text/javascript" src="valuta.js"></script>
+<script type="text/javascript" src="activities.js"></script>
 <link rel="stylesheet" href="css/drzave.css" > 
 <!-- 
 <script
@@ -51,11 +53,12 @@ integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7T
 </head>
  <body ng-controller = "Opsti as opsti" data-ng-init="init()"> 
 <!-- <body> -->
- <ul class="nav nav-tabs">
-    <li ng-class="{active: tab === 0}"><a href="#" ng-click="opsti.tabClick(0)"><h3>Home</h3></a></li>
-    <li ng-class="{active: tab === 1}"><a href="#" ng-click="opsti.tabClick(1)"><h3>Drzave</h3></a></li>
-    <li ng-class="{active: tab === 2}"><a href="#" ng-click="opsti.tabClick(2)"><h3>Naseljena mesta</h3></a></li>
-    
+ <ul class="nav nav-tabs"> 
+    <li ng-class="{active: tab === 0}"><a href="#" ng-click="opsti.tabClick(0)"><h4>Home</h4></a></li>
+    <li ng-class="{active: tab === 1}"><a href="#" ng-click="opsti.tabClick(1)"><h4>Drzave</h4></a></li>
+    <li ng-class="{active: tab === 2}"><a href="#" ng-click="opsti.tabClick(2)"><h4>Naseljena mesta</h4></a></li>
+    <li ng-class="{active: tab === 3}"><a href="#" ng-click="opsti.tabClick(3)"><h4>Valute</h4></a></li>
+	<li ng-class="{active: tab === 4}"><a href="#" ng-click="opsti.tabClick(4)"><h4>Djelatnosti</h4></a></li>
   </ul>
  <nav>
 <div >
@@ -70,6 +73,14 @@ integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7T
     <div id="naseljenaMesta" class="tab-pane fade in active" ng-show='tab == 2'>
       <h2>Naseljena</h2>
       <div ng-include="'NaseljenaMesta.html'"></div>
+    </div>
+	<div id="valute" class="tab-pane fade in active" ng-show='tab == 3'>
+      <h2>Valute</h2>
+      <div ng-include="'valuta.html'"></div>
+    </div>
+	<div id="valute" class="tab-pane fade in active" ng-show='tab == 4'>
+      
+      <div ng-include="'activities.html'"></div>
     </div>
     
   </div>
