@@ -1,0 +1,30 @@
+administrator.controller('Opsti', function($scope, $http, $compile, $timeout){
+	
+	$scope.tab = 0;
+	
+	$scope.dr = {};
+	
+	
+	$scope.init = function(){
+	
+		
+	};
+	
+
+	this.tabClick = function(num){
+		
+		$scope.tab = num;
+		
+	};
+	
+	this.tabClick2 = function(num, drzava){
+		
+		$scope.tab = num;
+		
+		$scope.dr = drzava;
+		
+		$scope.$broadcast ('someEvent');
+		
+	};
+	
+});

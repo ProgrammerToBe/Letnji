@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;mtb/src/main/resources/static/inicijalizacija/AdminScript1.html&apos; to &apos;AdminScript1.js&apos;" description="Rename resource &apos;AdminScript1.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/static/inicijalizacija/AdminScript1.html" name="AdminScript1.js" stamp="1493112262236" updateReferences="true"/>
+</session>
