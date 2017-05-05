@@ -12,11 +12,14 @@ app.controller("TabController", function(){
     };
 });
 
-app.controller("CertificateController", function($http){
+app.controller("CertificateController", function($http,$scope, $log){
 	var control = this;
 	control.certificate = {};
 	control.certificate.validFrom = new Date();
 	control.result = "";
+	$scope.alias="";
+	$scope.certificateDTO={};
+	$scope.found=false;
 	
 	this.generate = function(){
 		if(control.certificate.validFrom < control.certificate.validTo){
@@ -38,6 +41,26 @@ app.controller("CertificateController", function($http){
 		if(control.certificate.selfSigned){
 			control.certificate.issuerAlias = "";
 		}
+	}
+	
+	this.readCertificate=function(){
+		$log.log("Read certificate");
+		var path='/certificates/certificate/'+$scope.alias;
+		$log.log("Putanja "+ path);
+		$http({
+			method: 'GET',
+			url: path
+		}).then(
+			function successCallback(response){
+				$log.log("Uspijesno pronalazenje sertifikata");
+				$scope.certificateDTO=response.data;
+				$scope.alias="";
+				$scope.found=true;
+			}, 
+			function errorCallback(response){
+				$scope.found=false;
+			}
+		);
 	}
 });
 
