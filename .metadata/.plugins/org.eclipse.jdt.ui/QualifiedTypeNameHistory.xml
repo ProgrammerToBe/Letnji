@@ -3,4 +3,13 @@
 <fullyQualifiedTypeName name="korenski.repository.geografija.DrzavaRepository"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="korenski.model.geografija.Drzava"/>
+<fullyQualifiedTypeName name="java.util.logging.Logger"/>
+<fullyQualifiedTypeName name="java.util.logging.FileHandler"/>
+<fullyQualifiedTypeName name="java.util.logging.SimpleFormatter"/>
+<fullyQualifiedTypeName name="singletons.LoggerSingleton"/>
+<fullyQualifiedTypeName name="javax.management.relation.Role"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="korenski.model.autorizacija.Permission"/>
+<fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+<fullyQualifiedTypeName name="korenski.model.autorizacija.Role"/>
 </qualifiedTypeNameHistroy>
