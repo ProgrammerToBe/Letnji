@@ -4876,3 +4876,49 @@
 2017-05-05 16:33:49,073 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2017-05-05 16:33:49,075 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-05-05 16:33:49,076 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\My stuff\ProjekatRepo2\mtb\src\test\resources
+2017-05-05 21:44:11,828 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: korenski:mtb:0.0.1-SNAPSHOT @ D:\My stuff\ProjekatRepo2\mtb\pom.xml.
+2017-05-05 21:44:14,674 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /mtb/src/main/java
+2017-05-05 21:44:14,675 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /mtb/src/main/resources
+2017-05-05 21:44:14,677 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /mtb/src/main/resources
+2017-05-05 21:44:14,680 [Worker-2] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /mtb/src/test/java
+2017-05-05 21:44:15,208 [Worker-2] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 5 sec
+2017-05-05 21:44:34,646 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-05 21:44:34,651 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-05-05 21:44:34,672 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 122 resources
+2017-05-05 21:44:35,003 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-05 21:44:35,003 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\My stuff\ProjekatRepo2\mtb\src\test\resources
+2017-05-05 21:44:55,483 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-05 21:44:55,502 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-05-05 21:44:55,522 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 122 resources
+2017-05-05 21:44:55,557 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-05 21:44:55,558 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\My stuff\ProjekatRepo2\mtb\src\test\resources
+2017-05-05 21:47:29,718 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-05 21:47:29,730 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-05-05 21:47:29,741 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 122 resources
+2017-05-05 21:47:29,761 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-05 21:47:29,761 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\My stuff\ProjekatRepo2\mtb\src\test\resources
+2017-05-05 21:47:37,678 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-05 21:47:37,684 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-05-05 21:47:37,693 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 122 resources
+2017-05-05 21:47:37,712 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-05 21:47:37,712 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\My stuff\ProjekatRepo2\mtb\src\test\resources
+2017-05-05 21:53:24,104 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-05 21:53:24,111 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-05-05 21:53:24,119 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 122 resources
+2017-05-05 21:53:24,139 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-05 21:53:24,140 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\My stuff\ProjekatRepo2\mtb\src\test\resources
+2017-05-05 21:59:27,613 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-05 21:59:27,620 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-05-05 21:59:27,635 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 122 resources
+2017-05-05 21:59:27,667 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-05 21:59:27,668 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\My stuff\ProjekatRepo2\mtb\src\test\resources
+2017-05-05 22:01:45,067 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-05 22:01:45,073 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-05-05 22:01:45,083 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 122 resources
+2017-05-05 22:01:45,102 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-05 22:01:45,102 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\My stuff\ProjekatRepo2\mtb\src\test\resources
+2017-05-05 22:03:04,311 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-05 22:03:04,326 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-05-05 22:03:04,342 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 122 resources
+2017-05-05 22:03:04,363 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-05 22:03:04,363 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\My stuff\ProjekatRepo2\mtb\src\test\resources
