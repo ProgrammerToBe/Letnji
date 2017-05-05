@@ -1,0 +1,5 @@
+package korenski.model.autorizacija;
+
+public class Permission {
+
+}

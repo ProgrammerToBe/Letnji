@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import korenski.model.geografija.Drzava;
 import korenski.repository.geografija.DrzavaRepository;
+import singletons.LoggerSingleton;
 
 @Controller
 public class DrzavaController {
@@ -32,6 +33,8 @@ public class DrzavaController {
 			produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Drzava> novaDrzava(@RequestBody Drzava drzava , @Context HttpServletRequest request) throws Exception {
 
+		LoggerSingleton.getInstance().getLogger().info("Dodavanje nove drzave");
+		
 		
 		Drzava drz;
 		try {

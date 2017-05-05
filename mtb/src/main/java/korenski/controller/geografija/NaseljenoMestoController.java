@@ -62,7 +62,7 @@ public class NaseljenoMestoController {
 		
 		
 		NaseljenoMesto naseljenoMestoToModify = repository.findOne(naseljenoMesto.getId());
-		Drzava drzava = repD.findOne(naseljenoMesto.getId());
+		Drzava drzava = repD.findOne(naseljenoMesto.getDrzava().getId());
 		
 		naseljenoMestoToModify.setOznaka(naseljenoMesto.getOznaka());
 		naseljenoMestoToModify.setNaziv(naseljenoMesto.getNaziv());
@@ -118,7 +118,7 @@ public class NaseljenoMestoController {
 		
 		
 		
-		return new ResponseEntity<Collection<NaseljenoMesto>>( repository.findByOznakaContainingIgnoreCaseOrNazivContainingIgnoreCaseOrPostanskiBrojContainingIgnoreCaseAndDrzava(oznaka, naziv, postanskiBroj, drzava), HttpStatus.OK);
+		return new ResponseEntity<Collection<NaseljenoMesto>>( repository.findByOznakaContainingIgnoreCaseOrNazivContainingIgnoreCaseOrPostanskiBrojContainingIgnoreCaseOrDrzava(oznaka, naziv, postanskiBroj, drzava), HttpStatus.OK);
 	}
 
 }

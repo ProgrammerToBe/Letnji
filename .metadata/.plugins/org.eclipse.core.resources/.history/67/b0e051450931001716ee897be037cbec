@@ -1,0 +1,8 @@
+package korenski.controller.autorizacija;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class RoleController {
+
+}

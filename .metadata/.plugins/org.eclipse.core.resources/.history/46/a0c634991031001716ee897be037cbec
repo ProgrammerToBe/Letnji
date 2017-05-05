@@ -1,0 +1,5 @@
+administrator.controller('RukovanjePermisijama', function($scope, $http, $compile){
+	
+	
+	
+});

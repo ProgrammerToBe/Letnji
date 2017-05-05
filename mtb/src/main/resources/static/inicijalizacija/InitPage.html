@@ -22,9 +22,11 @@
 <script type="text/javascript" src="../js/vendor/angular-local-storage.min.js"></script>
 
 <script type = "text/javascript" src="../directives/login/cookieModul.js"></script>
-<script type = "text/javascript" src="AdminScript.js"></script>
-<script type = "text/javascript" src="AdminScript1.js"></script>
-<script type = "text/javascript" src="NMScript.js"></script>
+<script type = "text/javascript" src="geografija/AdminScript.js"></script>
+<script type = "text/javascript" src="geografija/AdminScript1.js"></script>
+<script type = "text/javascript" src="geografija/NMScript.js"></script>
+<script type = "text/javascript" src="roleIpermisije/permisijeScript.js"></script>
+<script type = "text/javascript" src="roleIpermisije/roleScript.js"></script>
 
 <link rel="stylesheet" href="css/drzave.css" > 
 <!-- 
@@ -54,7 +56,9 @@ integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7T
  <ul class="nav nav-tabs">
     <li ng-class="{active: tab === 0}"><a href="#" ng-click="opsti.tabClick(0)"><h3>Home</h3></a></li>
     <li ng-class="{active: tab === 1}"><a href="#" ng-click="opsti.tabClick(1)"><h3>Drzave</h3></a></li>
-    <li ng-class="{active: tab === 2}"><a href="#" ng-click="opsti.tabClick(2)"><h3>Naseljena mesta</h3></a></li>
+    <li ng-class="{active: tab === 2}"><a href="#" ng-click="opsti.tabClick(2);"><h3>Naseljena mesta</h3></a></li>
+    <li ng-class="{active: tab === 3}"><a href="#" ng-click="opsti.tabClick(3)"><h3>Permisije</h3></a></li>
+    <li ng-class="{active: tab === 4}"><a href="#" ng-click="opsti.tabClick(4)"><h3>Role</h3></a></li>
     
   </ul>
  <nav>
@@ -65,11 +69,21 @@ integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7T
     </div>
     <div id="drzave" class="tab-pane fade in active" ng-show='tab == 1'>
     
-      <div ng-include="'Drzave.html'"></div>
+      <div ng-include="'geografija/Drzave.html'"></div>
     </div>
     <div id="naseljenaMesta" class="tab-pane fade in active" ng-show='tab == 2'>
       <h2>Naseljena</h2>
-      <div ng-include="'NaseljenaMesta.html'"></div>
+      <div ng-include="'geografija/NaseljenaMesta.html'"></div>
+    </div>
+    
+    <div id="permisije" class="tab-pane fade in active" ng-show='tab == 3'>
+      <h2>Permisije</h2>
+      <div ng-include="'roleIpermisije/Permisije.html'"></div>
+    </div>
+    
+    <div id="role" class="tab-pane fade in active" ng-show='tab == 4'>
+      <h2>Role</h2>
+      <div ng-include="'roleIpermisije/Role.html'"></div>
     </div>
     
   </div>

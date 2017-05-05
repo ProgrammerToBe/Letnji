@@ -2,25 +2,30 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="setSe" key="selection"/>
-		<item value="false" key="casesensitive"/>
+		<item value="rola" key="selection"/>
+		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
-		<item value="false" key="wholeword"/>
+		<item value="true" key="wholeword"/>
 		<list key="findhistory">
-			<item value="setse"/>
-			<item value="filtriraj"/>
-			<item value="$scope.naseljenoMesto ="/>
+			<item value="naseljenoMesto"/>
+			<item value="naseljenaMesta"/>
+			<item value="idSelektovaneDrzave"/>
 			<item value="selektovanaDrzava"/>
-			<item value="sets"/>
-			<item value="drzave"/>
-			<item value="drzava"/>
-			<item value="rd"/>
+			<item value="sveDrzave"/>
+			<item value="d"/>
+			<item value="rnm"/>
+			<item value="idSelektovanogNaseljenogMesta"/>
 		</list>
 		<list key="replacehistory">
-			<item value="naseljenaMesta"/>
-			<item value="naseljenoMesto"/>
-			<item value="rnm"/>
+			<item value="rola"/>
+			<item value="role"/>
+			<item value="idSelektovaneRole"/>
+			<item value="selektovanaPermisija"/>
+			<item value="svePermisije"/>
+			<item value="sve"/>
+			<item value="p"/>
+			<item value="rr"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
