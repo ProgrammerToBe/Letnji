@@ -1,5 +1,0 @@
-package korenski.repository.autorizacija;
-
-public interface RoleRepository {
-
-}
