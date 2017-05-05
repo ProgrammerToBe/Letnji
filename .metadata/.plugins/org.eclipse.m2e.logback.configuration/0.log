@@ -4860,3 +4860,19 @@
 2017-05-05 15:04:51,101 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2017-05-05 15:04:51,106 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-05-05 15:04:51,106 [Worker-245] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\My stuff\ProjekatRepo1\mtb\src\test\resources
+2017-05-05 16:33:43,758 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: korenski:mtb:0.0.1-SNAPSHOT @ D:\My stuff\ProjekatRepo2\mtb\pom.xml.
+2017-05-05 16:33:45,494 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /mtb/src/main/java
+2017-05-05 16:33:45,495 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /mtb/src/main/resources
+2017-05-05 16:33:45,500 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /mtb/src/main/resources
+2017-05-05 16:33:45,507 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /mtb/src/test/java
+2017-05-05 16:33:45,844 [Worker-14] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 3 sec
+2017-05-05 16:33:47,742 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-05 16:33:47,747 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-05-05 16:33:47,771 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 122 resources
+2017-05-05 16:33:47,942 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-05 16:33:47,942 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\My stuff\ProjekatRepo2\mtb\src\test\resources
+2017-05-05 16:33:49,071 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-05 16:33:49,073 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-05-05 16:33:49,073 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-05-05 16:33:49,075 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-05-05 16:33:49,076 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\My stuff\ProjekatRepo2\mtb\src\test\resources
