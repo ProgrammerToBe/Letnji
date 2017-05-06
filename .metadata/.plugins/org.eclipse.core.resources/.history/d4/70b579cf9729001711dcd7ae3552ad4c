@@ -1,0 +1,5 @@
+administrator.controller('Opsti', function($scope, $http, $compile){
+	
+	$scope.tab = 0;
+	
+});
