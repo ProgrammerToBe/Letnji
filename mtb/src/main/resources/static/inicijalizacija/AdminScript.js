@@ -261,6 +261,13 @@ administrator.controller('RukovanjeDrzavama', function($scope, $http, $compile){
 		}
 	};
 	
+	
+	this.nextFormClick = function(){
+		
+		$scope.$parent.$parent.opsti.tabClick2(2, $scope.drzava);
+		
+	};
+	
 });
 
 administrator.directive('ngConfirmClick', [

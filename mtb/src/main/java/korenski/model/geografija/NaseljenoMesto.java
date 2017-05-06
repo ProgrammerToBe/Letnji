@@ -1,11 +1,15 @@
 package korenski.model.geografija;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -26,12 +30,16 @@ public class NaseljenoMesto {
 	@Column(unique = true, nullable = false)
 	private String postanskiBroj;
 	
-	
 	@ManyToOne
 	private Drzava drzava;
-
+	
+	@Column(name="klijenti")
+	@OneToMany()
+	private Collection<Klijent> klijenti;
+	
 	public NaseljenoMesto() {
 		super();
+		klijenti = new ArrayList<Klijent>();
 		// TODO Auto-generated constructor stub
 	}
 

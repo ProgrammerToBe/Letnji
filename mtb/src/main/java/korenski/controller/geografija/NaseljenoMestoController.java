@@ -1,6 +1,7 @@
 package korenski.controller.geografija;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.core.Context;
@@ -15,7 +16,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import korenski.model.geografija.Drzava;
 import korenski.model.geografija.NaseljenoMesto;
+import korenski.repository.geografija.DrzavaRepository;
 import korenski.repository.geografija.NaseljenoMestoRepository;
 
 @Controller
@@ -23,9 +26,11 @@ public class NaseljenoMestoController {
 
 	@Autowired
 	NaseljenoMestoRepository repository;
+	@Autowired
+	DrzavaRepository repD;
 	
 	@RequestMapping(
-			value = "/novaNaseljenoMesto",
+			value = "/novoNaseljenoMesto",
 			method = RequestMethod.POST,
 			consumes = MediaType.APPLICATION_JSON_VALUE,
 			produces = MediaType.APPLICATION_JSON_VALUE)
@@ -57,11 +62,12 @@ public class NaseljenoMestoController {
 		
 		
 		NaseljenoMesto naseljenoMestoToModify = repository.findOne(naseljenoMesto.getId());
+		Drzava drzava = repD.findOne(naseljenoMesto.getId());
 		
 		naseljenoMestoToModify.setOznaka(naseljenoMesto.getOznaka());
 		naseljenoMestoToModify.setNaziv(naseljenoMesto.getNaziv());
 		naseljenoMestoToModify.setPostanskiBroj(naseljenoMesto.getPostanskiBroj());
-		
+		naseljenoMestoToModify.setDrzava(drzava);
 
 		return new ResponseEntity<NaseljenoMesto>(repository.save(naseljenoMestoToModify), HttpStatus.OK);
 	}
@@ -71,11 +77,48 @@ public class NaseljenoMestoController {
 			value = "/svaNaseljenaMesta",
 			method = RequestMethod.GET,
 			produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<ArrayList<NaseljenoMesto>> svaNaseljenaMesta() throws Exception {
+	public ResponseEntity<Collection<NaseljenoMesto>> svaNaseljenaMesta() throws Exception {
 
 		
-		return new ResponseEntity<ArrayList<NaseljenoMesto>>((ArrayList<NaseljenoMesto>) repository.findAll(), HttpStatus.OK);
+		return new ResponseEntity<Collection<NaseljenoMesto>>( repository.findAll(), HttpStatus.OK);
 	}
 	
+	
+	@RequestMapping(
+			value = "/nadjiNaseljenaMesta/{id}",
+			method = RequestMethod.GET,
+			produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<Collection<NaseljenoMesto>> drzavinaNaseljenaMesta(@PathVariable("id") Long id) throws Exception {
+
+		
+		Drzava d = repD.findOne(id);
+		
+		return new ResponseEntity<Collection<NaseljenoMesto>>( repository.findByDrzava(d), HttpStatus.OK);
+	}
+	
+	@RequestMapping(
+			value = "/filtrirajNaseljenaMesta/{oznaka}/{naziv}/{postanski_broj}",
+			method = RequestMethod.GET,
+			produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<Collection<NaseljenoMesto>> filtrirajNaseljenaMesta(@PathVariable("oznaka") String oznaka,
+			@PathVariable("naziv") String naziv, @PathVariable("postanski_broj") String postanskiBroj) throws Exception {
+
+		
+		return new ResponseEntity<Collection<NaseljenoMesto>>( repository.findByOznakaContainingIgnoreCaseOrNazivContainingIgnoreCaseOrPostanskiBrojContainingIgnoreCase(oznaka, naziv, postanskiBroj), HttpStatus.OK);
+	}
+	
+	@RequestMapping(
+			value = "/filtrirajNaseljenaMestaZaDrzavu/{oznaka}/{naziv}/{postanski_broj}/{id}",
+			method = RequestMethod.GET,
+			produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<Collection<NaseljenoMesto>> filtrirajNaseljenaMestaDrzave(@PathVariable("oznaka") String oznaka,
+			@PathVariable("naziv") String naziv, @PathVariable("postanski_broj") String postanskiBroj,  @PathVariable("id") Long id) throws Exception {
+		
+		Drzava drzava = repD.findOne(id);
+		
+		
+		
+		return new ResponseEntity<Collection<NaseljenoMesto>>( repository.findByOznakaContainingIgnoreCaseOrNazivContainingIgnoreCaseOrPostanskiBrojContainingIgnoreCaseAndDrzava(oznaka, naziv, postanskiBroj, drzava), HttpStatus.OK);
+	}
 
 }
